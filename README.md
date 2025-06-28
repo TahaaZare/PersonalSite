@@ -2,11 +2,9 @@
 
 🎯 A bilingual personal portfolio website for showcasing GitHub projects and real-world work samples — built using **HTML**, **Tailwind CSS**, and **JavaScript**.
 
-🌍 این یک وب‌سایت دو زبانه برای نمایش نمونه‌کارهای گیت‌هاب و پروژه‌های واقعی من است. با استفاده از HTML، Tailwind CSS و JavaScript ساخته شده است.
-
 ---
 
-## 🌟 Features / ویژگی‌ها
+## 🌟 Features
 
 - 🗂️ Tab-based layout for **GitHub projects** & **real projects**
 - 🌐 **Multilingual (FA + EN)** with dynamic content switching
@@ -17,7 +15,7 @@
 
 ---
 
-## 🚀 Technologies Used / تکنولوژی‌های استفاده‌شده
+## 🚀 Technologies Used
 
 - HTML5 & Vanilla JavaScript
 - [Tailwind CSS](https://tailwindcss.com/)
@@ -26,13 +24,11 @@
 
 ---
 
-## 🧪 Demo / دمو
+## 🧪 Demo
 
 📌 [View Live on GitHub Pages](https://tahaazare.github.io/PersonalSite/)  
-🔗 یا اگر لوکال تست می‌کنید:
 
 ```bash
 git clone https://github.com/TahaaZare/PersonalSite.git
 cd PersonalSite
-# سپس فایل index.html را در مرورگر باز کنید
 ```
