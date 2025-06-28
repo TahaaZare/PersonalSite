@@ -10,6 +10,13 @@ function escapeHtml(text) {
 
 const translations = {
   en: {
+    aboutTitle: "About Me",
+    aboutText: `💻 Backend Developer with a focus on API design and clean architecture
+🧠 Skilled in Laravel, Django, Flask, and system performance optimization
+🛠️ Expert in MySQL, SQLite, Redis, PHP & Python
+🐞 Debugging & refactoring are my daily joy`,
+
+    skillsTitle: "Skills",
     viewProject: "View Project",
     name: "Zre Dev",
     title:
@@ -51,6 +58,13 @@ echo $uuidInt;
     proj2Desc: "Simple Livewire ticketing system with admin panel",
   },
   fa: {
+    aboutTitle: "درباره من",
+    aboutText: `💻 توسعه‌دهنده بک‌اند با تمرکز بر طراحی API و معماری تمیز
+🧠 مسلط به Laravel، Django، Flask و بهینه‌سازی عملکرد سیستم
+🛠️ متخصص در MySQL، SQLite، Redis، PHP و Python
+🐞 اشکال‌زدایی و بازنویسی کد از لذت‌های روزانه‌ام است`,
+
+    skillsTitle: "مهارت‌ها",
     viewProject: "نمایش پروژه",
     name: "طاها زارع",
     title:
@@ -210,6 +224,9 @@ function switchLang(lang) {
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === "fa" ? "rtl" : "ltr";
   document.getElementById("modal-link").innerText = t.viewProject;
+  document.getElementById("about-title").innerText = t.aboutTitle;
+  document.getElementById("about-text").innerText = t.aboutText;
+  document.getElementById("skills-title").innerText = t.skillsTitle;
 
   document.body.classList.toggle("text-right", lang === "fa");
   document.body.classList.toggle("text-left", lang !== "fa");
