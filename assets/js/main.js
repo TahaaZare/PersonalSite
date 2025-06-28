@@ -7,10 +7,18 @@ function escapeHtml(text) {
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
 }
+function updateTitle(lang) {
+  if (lang === "fa") {
+    document.title = "سایت شخصی طاها زارع | توسعه‌دهنده بک‌اند";
+  } else {
+    document.title = "Taha Zare | Backend Developer Portfolio";
+  }
+}
 
 const translations = {
   en: {
-    aboutTitle: "About Me",
+   metaDescription: "Backend developer passionate about Python & PHP — Laravel, Django & Flask ⚡",
+   aboutTitle: "About Me",
     aboutText: `💻 Backend Developer with a focus on API design and clean architecture
 🧠 Skilled in Laravel, Django, Flask, and system performance optimization
 🛠️ Expert in MySQL, SQLite, Redis, PHP & Python
@@ -58,7 +66,8 @@ echo $uuidInt;
     proj2Desc: "Simple Livewire ticketing system with admin panel",
   },
   fa: {
-    aboutTitle: "درباره من",
+   metaDescription: "توسعه‌دهنده بک‌اند، علاقه‌مند به پایتون و پی‌اچ‌پی، لاراول، جنگو و فلاسک⚡",
+   aboutTitle: "درباره من",
     aboutText: `💻 توسعه‌دهنده بک‌اند با تمرکز بر طراحی API و معماری تمیز
 🧠 مسلط به Laravel، Django، Flask و بهینه‌سازی عملکرد سیستم
 🛠️ متخصص در MySQL، SQLite، Redis، PHP و Python
@@ -238,6 +247,8 @@ function switchLang(lang) {
   document.getElementById("tab-github").innerText = t.githubTab;
   document.getElementById("tab-real").innerText = t.realTab;
 
+  updateTitle(lang);
+  updateMetaDescription(lang);
   renderGithubProjects(lang);
   renderRealProjects(lang);
 
